@@ -1,0 +1,74 @@
+{% extends "backend/model.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+{% block maincontent %}
+<body>
+<div style="width:100%;height:100%;">
+  <div class="box box-primary" style="padding-bottom: 0px;margin-bottom: 0px;">
+    <div class="box-header">
+      <h3 class="box-title">Single prediction</h3>
+    </div>
+    <div class="box-body">
+        <form class="form-group" method="post" action="{%url 'single_action'%}">
+            {% csrf_token %}
+            <label></label>
+            <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
+               <tr>
+                  <td colspan="3">In this page, you can input information as follow to predict price in <label>6</label> future months.<label>&nbsp Notice: each element in information should split by ','</label></td>
+                </tr>
+                <tr>
+                  <td>
+                      Real Estate Name
+                  </td>
+                  <td>
+                      Floor number
+                  </td>
+                  <td>
+                      SFA/GFA
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      For example:
+                  </td>
+                  <td colspan="2">
+                      <label>海都大廈,15,882</label>
+                  </td>
+                </tr>
+
+            </table>
+            <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
+                  <tbody>
+
+
+                    <tr>
+                      <th>
+                          <div class="form-group" style="margin-bottom:0px;">
+                            <div class="input-group">
+                              <div class="input-group-addon">
+                                <i class="fa fa-info"></i>
+                              </div>
+                              <input type="text" class="form-control pull-right" id="house_info" name="house_info">
+                            </div>
+                            <!-- /.input group -->
+                          </div>
+                      </th>
+                        <td>
+                            <input type="hidden" value="-1" name="city_message" id="city_message"/>
+                            <button type="submit" class="btn btn-primary pull-right" id="submit_button" >Get Price</button>
+                        </td>
+                    </tr>
+                  </tbody>
+            </table>
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
+
+{% endblock %}
