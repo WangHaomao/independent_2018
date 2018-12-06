@@ -89,7 +89,7 @@ Created (generated) three new features by map api and spider
 
 The co-relationship of new features as follow:
 
-<img width="50%" height="50%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181205234909754.png"/>
+<img width="50%" height="50%" src="./typora-user-images/image-20181205234909754.png"/>
 
 Arranged three four features from original data:
 
@@ -100,21 +100,21 @@ Arranged three four features from original data:
 ```
 The co-relationship of floor and areaSize  as follow:
 
-<img width="55%" height="55%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181206003014539.png"/>
+<img width="55%" height="55%" src="./typora-user-images/image-20181206003014539.png"/>
 
-<img width="60%" height="60%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181206003032536.png"/>
+<img width="60%" height="60%" src="./typora-user-images/image-20181206003032536.png"/>
 
 #### 3. Data analysis
 
 Plot the distribution of categorical data:
 
-<img width="55%" height="60%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181206002117351.png"/>
+<img width="55%" height="60%" src="./typora-user-images/image-20181206002117351.png"/>
 
-<img width="60%" height="60%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181206002136598.png"/>
+<img width="60%" height="60%" src="./typora-user-images/image-20181206002136598.png"/>
 
 
 The co-relationship of all features:
-![image-20181206001735012](/Users/haomao/Library/Application Support/typora-user-images/image-20181206001735012.png)
+![image-20181206001735012](./typora-user-images/image-20181206001735012.png)
 
 #### 4. Models selection (Cross-Validation 4 CV)
 
@@ -184,7 +184,7 @@ Name: princeInHKD, dtype: float64
 
 The label after log (beofre / 20):
 
-<img width="60%" height="60%" src="/Users/haomao/Library/Application Support/typora-user-images/image-20181206003755502.png"/>
+<img width="60%" height="60%" src="./typora-user-images/image-20181206003755502.png"/>
 
 
 There is the parameters for model, and the model is **LightGBM**
@@ -211,11 +211,11 @@ params = {
 
 Because the data value is relatively large, it is more intuitive to draw the image. The following three images are the comparison of the true value and the prediction value of the data volume of 100, 50, and 20 respectively.
 
-![image-20181205235722249](/Users/haomao/Library/Application Support/typora-user-images/image-20181205235722249.png)
+![image-20181205235722249](./typora-user-images/image-20181205235722249.png)
 
-![image-20181205235943160](/Users/haomao/Library/Application Support/typora-user-images/image-20181205235943160.png)
+![image-20181205235943160](./typora-user-images/image-20181205235943160.png)
 
-![image-20181206000003529](/Users/haomao/Library/Application Support/typora-user-images/image-20181206000003529.png)
+![image-20181206000003529](./typora-user-images/image-20181206000003529.png)
 
 ## Part Two,  Simple Dango Website
 
@@ -259,13 +259,13 @@ projectWeb:
 #### 4. Main pages gallery
 
 Single prediction here, it means we only can predict one estate one time.
-![image-20181205231353073](/Users/haomao/Library/Application Support/typora-user-images/image-20181205231353073.png)
+![image-20181205231353073](./typora-user-images/image-20181205231353073.png)
 The result of this estate in future 6 months
-![image-20181205231426678](/Users/haomao/Library/Application Support/typora-user-images/image-20181205231426678.png)
+![image-20181205231426678](./typora-user-images/image-20181205231426678.png)
 Histogram
-![image-20181205231502430](/Users/haomao/Library/Application Support/typora-user-images/image-20181205231502430.png)
+![image-20181205231502430](./typora-user-images/image-20181205231502430.png)
 Map around
-![image-20181205231541338](/Users/haomao/Library/Application Support/typora-user-images/image-20181205231541338.png)
+![image-20181205231541338](./typora-user-images/image-20181205231541338.png)
 
 
 
